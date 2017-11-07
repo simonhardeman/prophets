@@ -1,0 +1,16 @@
+diff --git a/src/Normalizer/OffsetPageNormalizer.php b/src/Normalizer/OffsetPageNormalizer.php
+index 8dba9d1..d0fda02 100644
+--- a/src/Normalizer/OffsetPageNormalizer.php
++++ b/src/Normalizer/OffsetPageNormalizer.php
+@@ -48,9 +48,9 @@ class OffsetPageNormalizer implements DenormalizerInterface {
+       OffsetPage::SIZE_KEY => OffsetPage::SIZE_MAX,
+     ];
+ 
+-    if ($expanded[OffsetPage::SIZE_KEY] > OffsetPage::SIZE_MAX) {
++    /*if ($expanded[OffsetPage::SIZE_KEY] > OffsetPage::SIZE_MAX) {
+       $expanded[OffsetPage::SIZE_KEY] = OffsetPage::SIZE_MAX;
+-    }
++    }*/
+ 
+     return $expanded;
+   }
